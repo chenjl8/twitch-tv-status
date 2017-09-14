@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch.tv Status</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Arimo|Roboto|Roboto+Condensed'>
+<link rel='stylesheet prefetch' href='http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div id="notification"></div>
+<div class="container" id="broad">  
+<ul id="menu-main">
+          
+					<li><a href="#tab1" onclick="allClicked()">ALL</a></li>
+					<li><a href="#tab2" onclick="onlineClicked()">ONLINE</a></li>
+					<li><a href="#tab3" onclick="offlineClicked()">OFFLINE</a></li>
+					
+</ul>  
+   
+  <div id="tab1" >
+    <div class="stylish-input-group">
+    <input type="text" id="search1" placeholder ="Searching...">
+    
+    <button type="submit" id ="but1"><i class="fa fa-search"></i></button>
+    </div>  
+    
+ <div id="channel-list1"></div>
+    
+  </div>
+  <div id="tab2">        
+     <div id="channel-list2"></div>
+  </div>
+  <div id="tab3">        
+     <div id="channel-list3"></div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
